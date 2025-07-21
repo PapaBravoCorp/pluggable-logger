@@ -1,0 +1,31 @@
+{
+  "name": "@papabravocorp/pluggable-logger",
+  "version": "1.0.0",
+  "description": "A pluggable logger for Node.js that writes structured logs to local file systems, Azure ADLS, or custom storage backends.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "logger",
+    "typescript",
+    "azure",
+    "ADLS",
+    "pluggable-logger"
+  ],
+  "author": "Prabodh Bharose",
+  "license": "MIT",
+  "dependencies": {
+    "@azure/identity": "^3.4.0",
+    "@azure/storage-file-datalake": "^12.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "rimraf": "^5.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  }
+}

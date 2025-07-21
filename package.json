@@ -1,6 +1,6 @@
 {
   "name": "@papabravocorp/pluggable-logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A pluggable logger for Node.js that writes structured logs to local file systems, Azure ADLS, or custom storage backends.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
